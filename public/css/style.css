@@ -225,6 +225,13 @@ strong {
   display: flex;
   justify-content: space-between;
 }
+.caixaComentario{
+  width: 90%;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .comentario p {
   white-space: nowrap;
   overflow: hidden;

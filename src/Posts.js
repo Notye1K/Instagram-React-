@@ -12,7 +12,7 @@ comentarios: [{comentador:'Nome',comentario:'Lorem ipsum dolor sit'}], tempo:'2 
 {img:'meowed.svg', titulo:'meowed',video:true, conteudo:'video',
 curtidoPorImg:'respondeai.svg', curtidoPor:'respondeai', numCurtidas:200.523,
 comentarios: [{comentador:'Nome',comentario:'Lorem ipsum dolor sit'},
-{comentador:'Nome2',comentario:'Lorem 2 ipsum dolor sit'}], tempo:'2 horas'}, 
+{comentador:'Nome2',comentario:'Lorem 2 ipsum dolor sit Lorem 2 ipsum dolor sit Lorem 2 ipsum dolor sit Lorem 2 ipsum dolor sit'}], tempo:'2 horas'}, 
 {img:'barked.svg', titulo:'barked',video:false, conteudo:'dog.svg', 
 curtidoPorImg:'adorable_animals.svg', curtidoPor:'adorable_animals',
 numCurtidas: 99.159, comentarios:[{comentador:'Nome',comentario:'Lorem ipsum dolor sit'},
@@ -25,7 +25,7 @@ const Post = array.map(i => {
     const Comentarios = i.comentarios.map(i => {
         return (
             <div class="comentario">
-                <p><strong>{i.comentador}</strong> {i.comentario} </p>
+                <div class='caixaComentario'> <p><strong>{i.comentador}</strong> {i.comentario} </p> </div>
                 <ion-icon name="heart-outline"></ion-icon>
             </div>
         )
