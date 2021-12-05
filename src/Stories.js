@@ -1,10 +1,13 @@
+import { ChevronForwardCircle } from 'react-ionicons'
+
 export default function Stories(){
     return(
         <div class="stories">
             {Story}
 
             <div class="setinha">
-                <ion-icon name="chevron-forward-circle"></ion-icon>
+                <ChevronForwardCircle class= "ion-icon" color={'#fff'} height="28px"
+  width="28px"></ChevronForwardCircle>
             </div>
         </div>
     )
